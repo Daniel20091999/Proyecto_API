@@ -1,3 +1,5 @@
+
+#Prueba de creación de un Todo
 ###
 POST http://127.0.0.1:5000/todo HTTP/1.1
 Content-Type: application/json
@@ -7,12 +9,15 @@ Content-Type: application/json
     "description" :  "Aprendiendo a hacer una API"
 }
 
+#Prueba de consulta de los Todos creados
 ###
 GET http://127.0.0.1:5000/todo HTTP/1.1
 
+#Prueba de consultar los datos de un Todo en funcion de su ID
 ###
 GET http://127.0.0.1:5000/todo/6661b492eac5d83878ff824f HTTP/1.1
 
+#Prueba de modificación de un Todo en funcion de su ID
 ###
 PUT http://127.0.0.1:5000/todo/6661b492eac5d83878ff824f HTTP/1.1
 Content-Type: application/json
@@ -22,5 +27,6 @@ Content-Type: application/json
     
 }
 
+#Prueba de eliminación de un Todo en función de su ID
 ###
 DELETE  http://127.0.0.1:5000/todo/6661b492eac5d83878ff824f HTTP/1.1
