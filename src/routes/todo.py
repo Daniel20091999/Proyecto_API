@@ -7,7 +7,7 @@ def get_todos():
     return 'get all todos'
 
 @todo.route('/<id>', methods = ['GET'])
-def get_todo():
+def get_todo(id):
     return 'Get todo by id'
 
 @todo.route('/', methods = ['POST'])
@@ -15,9 +15,9 @@ def create_todo():
     return 'Create todo'
 
 @todo.route ('/<id>' , methods = ['PUT'])
-def update_todo():
+def update_todo(id):
     return 'Update todo'
 
 @todo.route ('/<id>' , methods = ['DELETE'])
-def delete_todo():
+def delete_todo(id):
     return 'Delete todo'
