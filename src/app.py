@@ -1,9 +1,10 @@
+#Importamos las librerias necesarias
 from flask import Flask, render_template
-from routes.todo import todo
 from dotenv import load_dotenv
 import os
+#Importamos la configuración de BBDD y servicios
 from config.mongodb import mongo
-
+from routes.todo import todo
 load_dotenv()
 
 app =  Flask(__name__)
